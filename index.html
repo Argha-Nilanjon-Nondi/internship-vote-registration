@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <title>Vote registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .navbar {
+            background-color: rgb(85, 80, 80);
+        }
+        
+        input {
+            margin: 0.2rem;
+        }
+        
+        .logo {
+            width: 9rem;
+            height: 5rem;
+        }
+        
+        .vote-head {
+            color: white;
+        }
+        
+        .warning-txt {
+            color: rgb(190, 21, 21);
+        }
+        
+        .warning-txt-dan {
+            color: rgb(241, 26, 26);
+        }
+        
+        .form-bg {
+            background-color: rgb(226, 212, 212);
+        }
+        
+        .warning-bg {
+            background-color: grey;
+        }
+        
+        .rule-bg {
+            background-color: rgb(243 89 89);
+        }
+        
+        .custom-d-inline {
+            display: inline-block;
+        }
+        
+        @media screen and (max-width:1100px) {
+            .logo {
+                width: 6rem;
+                height: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--nav bar start-->
+
+    <div class="row navbar p-3">
+        <div class="col-sm-5">
+            <div class="row">
+                <div class="col-4">
+                    <img class="logo" src="https://internship.suvenconsultants.com/projects/Voter_FORM6/images/flag.png" alt="">
+                </div>
+                <div class="col-8">
+                    <p class="fs-3 vote-head">राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-8">
+                    <p class="fs-3 vote-head"> NATIONAL VOTERS' SERVICES DEMO PORTAL </p>
+                </div>
+                <div class="col-4">
+                    <img class="logo" src="https://internship.suvenconsultants.com/projects/Voter_FORM6/images/vote.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--nav bar end-->
+
+    <!--a stART-->
+    <div class="row py-2 justify-content-around">
+        <div class="col justify-content-around">
+            <div class="row">
+                <div class="col-sm-5 m-1">
+                    <div class="row justify-content-center">
+                        <div class="col-3">
+
+                            <button class="btn btn-secondary">A +</button>
+                        </div>
+                        <div class="col-3">
+
+                            <button class="btn btn-secondary">A -</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 m-1">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <p class="fs-4 text-center">Select Language</p>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-select btn-secondary" aria-label="Default select example">
+
+                        <option value="1">Hindi</option>
+                        <option value="2">English</option>
+
+                    </select>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--A END-->
+            <hr>
+
+
+            <!--form start-->
+            <form>
+                <div class="container">
+                    <p class="fs-2 warning-txt">Note: Fields marked with asterisks ( <span class="warning-txt-dan">*</span> ) are mandatory
+                    </p>
+                    <div class="container form-bg py-2">
+                        <div class="container warning-bg p-2">
+                            <p class="fs-6">Type 6<br> [See rule 13(1) and 26]</p>
+                        </div>
+
+
+                        <div class="container rule-bg p-2">
+                            <p class="fs-6">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</p>
+                        </div>
+
+                        <p class="fs-5 py-5">In service</p>
+                        <p class="fs-5 py-2">Electoral Registration Officer</p>
+                        <div class="row my-6">
+                            <div class="row ml-3">
+                                <div class="col-sm-6">
+                                    <div class="row ">
+                                        <div class="col-sm-3">
+                                            <p class="fs-5">State</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-select btn-secondary" aria-label="Default select example">
+
+                                        <option value="1" selected>Select</option>
+
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row justify-content-start">
+                                        <div class="col-sm-3">
+                                            <p class="fs-5">District</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-select btn-secondary" aria-label="Default select example">
+
+                                        <option value="1" selected>Select</option>
+
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <p class="fs-5">
+                                                Legislative Assembly / Parlimentary / constituenc</p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="form-select btn-secondary" aria-label="Default select example">
+
+                                        <option value="1" selected>Select</option>
+
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="fs-5 py-2">I request that my name be included in electoral rolls for all the aforesaid areas
+                        </p>
+                        <div class="row my-5">
+                            <div class="row ml-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                    <label class="form-check-label" for="flexCheckDefault1">
+                                First time voter
+                            </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                Due to transfer from other meeting areas.
+                            </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fs-5 py-2">Below are specifications in support of my claim to be included in the electoral rolls.
+                        </p>
+
+
+
+                        <!--Mandatory specifications start-->
+
+                        <div class="container rule-bg p-2 my-2">
+                            <p class="fs-3">Mandatory specifications</p>
+
+                        </div>
+                        <div class="my-4">
+
+                            <div class="mb-2">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="fs-6 mx-3">(A) Name <span
+                                    class="warning-txt-dan">*</span></label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                        <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="fs-6 mx-3">(B) Surname (if any) <span
+                                    class="warning-txt-dan">*</span></label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                        <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="fs-6 mx-3">(C) Name of the applicant's relative <span
+                                    class="warning-txt-dan">*</span></label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                        <input class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="fs-6 mx-3">Nickname of the applicant's relative <span
+                                    class="warning-txt-dan">*</span></label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                        <input class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlInput1" class="fs-6 mx-3">(D) Type of the relationship
+                                    <span class="warning-txt-dan">*</span></label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                    <option value="1" selected="">Select</option>
+        
+                                </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="mt-5">
+                                <div class="form-check">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        (E) Age [on January 1 of the current calender] <span class="warning-txt-dan">*</span>
+                                    </label>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                    <option value="1" selected="">Year</option>
+    
+                                </select>
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+    
+                                    <option value="1" selected="">Month</option>
+    
+                                </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="my-3">
+                                    <p class="fs-5 py-2 fw-bold">Or</p>
+                                </div>
+                                <div class="my-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label mx-3" for="flexRadioDefault2">
+                                        (F) Date of birth (in the form of day/ month/ year)
+                                        mm/dd/yyyy <span class="warning-txt-dan">*</span>
+                                    </label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="date" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="my-5">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">(G) Applicant's gender <span
+                                        class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                        <option value="1" selected="">Select</option>
+            
+                                    </select>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!--Mandatory specifications end-->
+
+                            <!-- Current address, whose applicant is nominally resident start-->
+
+                            <div class="container rule-bg p-2 my-2">
+                                <p class="fs-3"> Current address, whose applicant is nominally resident</p>
+                            </div>
+                            <div class="my-4">
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">House no. <span
+                                    class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Street / area / location<span
+                                    class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                            <input class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">City / Village:<span
+                                    class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Post Office:<span
+                                    class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="In English)">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="(In Regional)">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Pin ode
+                                        <span class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+
+
+                                            <input type="number" class="rounded-3 mx-1 p-1 fs-6 border border-light">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Nickname of the applicant's relative
+                                        <span class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                        <option value="1" selected="">Select</option>
+        
+                                    </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6"> <label for="exampleFormControlInput1" class="fs-6 mx-3">State / Union Territory
+                                    <span class="warning-txt-dan">*</span>
+                                </label></div>
+                                        <div class="col-sm-6">
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+                                        <option value="1" selected="">Select</option>
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="my-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">District
+                                        <span class="warning-txt-dan">*</span></label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+                                        <option value="1" selected="">Select</option>
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="my-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Family / Neighbour Epic
+                                        No</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="rounded-3 mx-1 p-1 fs-6 border border-light">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+                            </div>
+
+                            <!-- Current address, whose applicant is nominally resident end-->
+
+
+                            <!--Optional specialties start-->
+
+                            <div class="container rule-bg p-2 my-2">
+                                <p class="fs-3">Optional specialties</p>
+                            </div>
+                            <div class="my-4">
+                                <div class="mb-2">
+                                    <p>
+                                        <label for="exampleFormControlInput1" class="fs-6">(T) Disability (if any)
+                            </label>
+                                    </p>
+                                </div>
+                                <div class="mb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Visual impairment</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Speech and hearing impairment</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Motion disabling</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">other</label>
+                                        <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+
+                                            <label for="exampleFormControlInput1" class="fs-6">(Th) Email ID (optional)</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <label for="exampleFormControlInput1" class="fs-6">(D) mobile number (optional)</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label for="exampleFormControlInput1" class="fs-6">+91</label>
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <!--Optional specialties end-->
+
+
+
+                            <!-- Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB) start-->
+
+                            <div class="container rule-bg p-2 my-2">
+                                <p class="fs-3">Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+                                </p>
+                            </div>
+                            <div class="my-4">
+                                <div class="my-1">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Your photo<span
+                                        class="warning-txt-dan">*</span></label>
+                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-1">
+                                    <label for="exampleFormControlInput1" class="fs-6 mx-3">Age proof<span
+                                class="warning-txt-dan">*</span></label>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+
+                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Document type
+                                    <span class="warning-txt-dan">*</span></label>
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                    <option value="1" selected="">Select</option>
+
+                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-1">
+                                    <label for="exampleFormControlInput1" class="fs-6 mx-3">Adress proof<span
+                                class="warning-txt-dan">*</span></label>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+
+                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Document type
+                                    <span class="warning-txt-dan">*</span></label>
+                                            <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                    <option value="1" selected="">Select</option>
+
+                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!--Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)t end-->
+
+
+
+                            <!-- Declaration start-->
+
+                            <div class="container rule-bg p-2 my-2">
+                                <p class="fs-3"> Declaration</p>
+                            </div>
+                            <div class="my-4">
+                                <p class="fs-5 py-2">I declare I declare that according to my best knowledge and belief<br> I am a citizen of India and of my birth;</p>
+                                <div>
+                                    <div class="mb-2">
+                                        <p>
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">City / Village <span
+                                        class="warning-txt-dan">*</span></label>
+                                            <input type="text" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+                                        </p>
+                                    </div>
+
+                                    <div class="my-2">
+
+                                        <div class="row">
+                                            <div class="col-4">
+
+                                                <label for="exampleFormControlInput1" class="fs-6 mx-3">Select state
+                                        <span class="warning-txt-dan">*</span></label>
+
+
+                                                <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                        <option value="1" selected="">Select</option>
+
+                                    </select>
+                                            </div>
+                                            <div class="col">
+
+                                                <label for="exampleFormControlInput1" class="fs-6 mx-3">District
+                                        <span class="warning-txt-dan">*</span></label>
+
+
+                                                <select class="rounded-3 fs-6 p-1 btn-secondary custom-d-inline" aria-label="Default select example">
+
+                                        <option value="1" selected="">Select</option>
+
+                                    </select>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="my-2">
+                                        <p>
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Date<span
+                                        class="warning-txt-dan">*</span></label>
+                                            <input type="date" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="fs-5 py-2">(ii) I am a nominally resident in the address given in the above (date, month, year) above;
+                                    <br> I have not applied to include my name in the electoral roll for any other constituency;
+                                </p>
+                                <div>
+                                    <div class="mt-5">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label mx-3" for="flexRadioDefault1">(iv) My name has not been
+                                    already included in the electoral roll for this or any other assembly /
+                                    parliamentary
+                                    constituency </label>
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <p class="fs-5 py-2 fw-bold">Or</p>
+                                    </div>
+                                    <div class="my-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
+                                            <label class="form-check-label mx-3" for="flexRadioDefault2">My name would have been
+                                    included in electoral rolls of the State's constituency, in which I was already
+                                    residing
+                                    in the address mentioned below, and if so, then I request that it be removed from
+                                    that
+                                    electoral roll. Go.</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <hr>
+                                <div>
+                                    <div class="my-2">
+
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <label for="exampleFormControlInput1" class="fs-6 mx-3">Location
+                                        <span class="warning-txt-dan">*</span></label>
+
+                                                <input type="text" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+
+                                            </div>
+                                            <div class="col">
+
+                                                <label for="exampleFormControlInput1" class="fs-6 mx-3">Date
+                                        <span class="warning-txt-dan">*</span></label>
+                                                <input type="date" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <p class="fs-5 py-2">I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true, the People's Representation Act, 1950 (43 of 1950 ) Is punishable under section
+                                    31
+                                </p>
+
+                                <div>
+                                    <div class="mb-2">
+                                        <p>
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3">Captcha</label>
+
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="" style="background-image: url('https://internship.suvenconsultants.com/projects/Voter_FORM6/images/captcha.png');">
+                                            <label for="exampleFormControlInput1" class="fs-6 mx-3"><i
+                                        class="fa fa-redo"></i></label>
+                                            <input type="email" class="rounded-3 mx-1 p-1 fs-6 border border-light" placeholder="">
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="my-3 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-success m-1">Submit</button>
+                                    <button type="reset" class="btn btn-success m-1">Reset</button>
+                                </div>
+
+                            </div>
+
+                            <!--Declaration end-->
+                        </div>
+                    </div>
+            </form>
+            </div>
+            <!--form end-->
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
