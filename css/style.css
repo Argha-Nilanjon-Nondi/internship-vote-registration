@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(85, 80, 80);
+}
+
+input {
+    margin: 0.2rem;
+}
+
+.logo {
+    width: 9rem;
+    height: 5rem;
+}
+
+.vote-head {
+    color: white;
+}
+
+.warning-txt {
+    color: rgb(190, 21, 21);
+}
+
+.warning-txt-dan {
+    color: rgb(241, 26, 26);
+}
+
+.form-bg {
+    background-color: rgb(226, 212, 212);
+}
+
+.warning-bg {
+    background-color: grey;
+}
+
+.rule-bg {
+    background-color: rgb(243 89 89);
+}
+
+.custom-d-inline {
+    display: inline-block;
+}
+
+@media screen and (max-width:1100px) {
+    .logo {
+        width: 6rem;
+        height: 4rem;
+    }
+}
