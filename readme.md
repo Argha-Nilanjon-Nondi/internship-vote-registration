@@ -1,7 +1,7 @@
 
 # Vote registration
 
-It is a simple quize app which I built in my frontend internship.
+It is a form app which I built in my frontend internship.
 
 <br>
 
